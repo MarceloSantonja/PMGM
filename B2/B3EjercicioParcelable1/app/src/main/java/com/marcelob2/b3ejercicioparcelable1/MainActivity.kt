@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         //vas por
         mandarBoton.setOnClickListener {
-            val pers = Persona(dni.text.toString(),nombre.text.toString(),edad.text.toString().toInt())
+            //val pers = Persona(dni.text.toString(),nombre.text.toString(),edad.text.toString().toInt())
 
         }
     }

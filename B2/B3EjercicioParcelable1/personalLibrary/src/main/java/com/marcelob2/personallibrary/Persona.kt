@@ -4,22 +4,23 @@ import android.os.Parcel
 import android.os.Parcelable
 
 class Persona() : Parcelable {
-    var dni : String?
-    var nombre : String?
-    var edad : Int?
+    private var dni : String?
 
+    private var nombre : String?
+
+    private var edad : Int?
+
+
+    fun getEdad (): Int? {
+        return this.edad;
+    }
     init{
         this.dni = ""
         this.nombre =""
         this.edad = 0
 
     }
-    constructor(dni : String?, nombre : String?, edad : Int?) : this() {
-        this.dni = dni
-        this.nombre = nombre
-        this.edad = edad
 
-    }
     constructor(parcel: Parcel) : this() {
         this.dni = parcel.readString()
         this.nombre = parcel.readString()
@@ -44,6 +45,9 @@ class Persona() : Parcelable {
         override fun newArray(size: Int): Array<Persona?> {
             return arrayOfNulls(size)
         }
+// ayuda override
+        override fun toString(): String = "Nombre: "
+
     }
 
 }
