@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/DNIEditText"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="dni"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="268dp" />
+
+    <EditText
+        android:id="@+id/NombreEditText"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DNIEditText" />
+
+    <EditText
+        android:id="@+id/EdadEditText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:hint="edad"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/NombreEditText"
+        app:layout_constraintStart_toEndOf="@+id/NombreEditText"
+        app:layout_constraintTop_toTopOf="@+id/NombreEditText" />
+
+    <Button
+        android:id="@+id/MandarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Mandar"
+        app:layout_constraintTop_toBottomOf="@+id/NombreEditText"
+        tools:layout_editor_absoluteX="147dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
