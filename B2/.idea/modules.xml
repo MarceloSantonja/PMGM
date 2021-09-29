@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/B2.iml" filepath="$PROJECT_DIR$/.idea/B2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/B3EjercicioParcelable2.iml" filepath="$PROJECT_DIR$/.idea/modules/B3EjercicioParcelable2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PersonalLibrary/B3EjercicioParcelable2.PersonalLibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/PersonalLibrary/B3EjercicioParcelable2.PersonalLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/B3EjercicioParcelable2.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/B3EjercicioParcelable2.app.iml" />
     </modules>
   </component>
 </project>
