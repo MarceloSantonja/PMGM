@@ -1,4 +1,4 @@
-package com.marcelo.p1parcelable
+package com.marcelob2.personalibrary
 
 import android.os.Parcel
 import android.os.Parcelable
@@ -49,6 +49,7 @@ class Persona() : Parcelable {
 
     override fun toString(): String {
         return "Nombre: $nombre \nDNI: $dni \nEDAD:  $edad"
+
     }
 
 }
