@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: ./../P1parcelable/PersonaLibrary/build/outputs/aar/PersonaLibrary.aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/43cc124bc398dce0463c94bf8d715dcb/transformed/jetified-PersonaLibrary/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/43cc124bc398dce0463c94bf8d715dcb/transformed/jetified-PersonaLibrary/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/43cc124bc398dce0463c94bf8d715dcb/transformed/jetified-PersonaLibrary/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
