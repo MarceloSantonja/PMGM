@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/P1parcelable.iml" filepath="$PROJECT_DIR$/.idea/modules/P1parcelable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PersonaLibrary/P1parcelable.PersonaLibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/PersonaLibrary/P1parcelable.PersonaLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/P1parcelable.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/P1parcelable.app.iml" />
     </modules>
   </component>
