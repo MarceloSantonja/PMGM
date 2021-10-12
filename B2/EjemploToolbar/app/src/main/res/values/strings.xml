@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">EjemploToolbar</string>
+    <string name="hello_world">hola Mundo</string>
+    <string name="app_name_toolbar">ToolbarCardview</string>
 </resources>
