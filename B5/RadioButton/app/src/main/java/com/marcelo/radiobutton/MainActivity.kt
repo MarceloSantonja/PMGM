@@ -17,16 +17,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
         val corporativo =binding.CorporativoLayout
         val particular = binding.ParticularLayout
-
-        binding.ParticularRadioButton.id
+        val corporativoBoton =binding.CorporativoRadioButton
+        val particularBoton = binding.ParticularRadioButton
 
         binding.GrupoRadioBotones.setOnCheckedChangeListener { _, _ ->
 
-            if (binding.CorporativoRadioButton.isChecked) {
+            if (corporativoBoton.isChecked) {
                 corporativo.setVisibility(View.VISIBLE)
                 particular.setVisibility(View.GONE)
             }
-            if (binding.ParticularRadioButton.isChecked) {
+            if (particularBoton.isChecked) {
                 corporativo.setVisibility(View.GONE)
                 particular.setVisibility(View.VISIBLE)
 
