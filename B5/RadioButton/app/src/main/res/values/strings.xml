@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">RadioButton</string>
+    <string name="tipo_de_cliente">Tipo de cliente:</string>
+    <string name="profesion">Profesion</string>
+    <string name="nombre_completo">Nombre completo</string>
+    <string name="particular">Particular</string>
+    <string name="corporativo">Corporativo</string>
 </resources>
