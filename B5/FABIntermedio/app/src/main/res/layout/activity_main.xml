@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/contenedor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_weight="0.3"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/linearSupereio"
+           android:background="#E3ED78">
+           <com.google.android.material.textfield.TextInputLayout
+               style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+               android:id="@+id/text_input_layout_name"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="50dp"
+               android:layout_marginStart="10dp"
+               android:layout_marginEnd="10dp"
+               android:layout_marginBottom="10dp"
+               android:hint="Telefono"
+               app:startIconDrawable="@android:drawable/stat_sys_phone_call_on_hold"
+               app:helperText="Required"
+
+               app:counterEnabled="true"
+               app:counterMaxLength="20">
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/telefonoText"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="phone"
+                   android:singleLine="true" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/text_input_layout_pais"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginEnd="10dp"
+           android:layout_marginBottom="10dp"
+           android:hint="Pais"
+           app:boxCornerRadiusTopEnd="10dp"
+           app:boxCornerRadiusTopStart="10dp">
+           <com.google.android.material.textfield.MaterialAutoCompleteTextView
+               android:id="@+id/paisText"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="textAutoComplete"
+               android:singleLine="true"
+               android:completionThreshold="1"/>
+       </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="0.7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearInferior"
+            android:background="#235F67"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:src="@android:drawable/ic_menu_send"
+        android:backgroundTint="@color/design_default_color_primary"
+        app:layout_anchor="@id/linearInferior"
+        app:layout_anchorGravity="center|top">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

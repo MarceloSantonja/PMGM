@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         val corporativoBoton =binding.CorporativoRadioButton
         val particularBoton = binding.ParticularRadioButton
 
-        binding.GrupoRadioBotones.setOnCheckedChangeListener { _, _ ->
+        binding.GrupoRadioBotones.setOnCheckedChangeListener { radioGrups, entero->
 
             if (corporativoBoton.isChecked) {
                 corporativo.setVisibility(View.VISIBLE)

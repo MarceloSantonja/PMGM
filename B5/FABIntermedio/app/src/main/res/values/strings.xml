@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FABIntermedio</string>
+    <string-array name="colores">
+        <item>Blanco</item>
+        <item>Blue</item>
+        <item>Blau</item>
+        <item>Rojo</item>
+    </string-array>
+</resources>
