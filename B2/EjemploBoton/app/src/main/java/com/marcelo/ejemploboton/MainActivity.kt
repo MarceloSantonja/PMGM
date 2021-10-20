@@ -3,8 +3,12 @@ package com.marcelo.ejemploboton
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.marcelo.ejemploboton.databinding.ActivityMainBinding
+import java.util.zip.Inflater
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -25,9 +29,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(p0: View?) {
         when(p0){
 
-            bindig.boton0 -> Toast.makeText(applicationContext,"Boton0",Toast.LENGTH_SHORT).show()
-            bindig.materialButtonIcon -> Toast.makeText(applicationContext,"BotonIco",Toast
-                .LENGTH_SHORT).show()
+            bindig.boton0 -> sacarDialogo()
+            bindig.materialButtonIcon -> sacarProgressIndicator()
             bindig.buttonUnelevate -> Toast.makeText(applicationContext,"BotonUnelevate",Toast
                 .LENGTH_SHORT).show()
         }
@@ -36,6 +39,23 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         Toast.makeText(applicationContext,"ajsfhjkafghalkfslkjqas",Toast
             .LENGTH_SHORT).show()
+
+    }
+    fun sacarDialogo(){
+
+        var vista =layoutInflater.inflate(R.layout.dialogo_personalizado, null)
+       var dialog = MaterialAlertDialogBuilder(this)
+
+        dialog.setView(vista)
+        dialog.show()
+        vista.findViewById<Button>(R.id.eliminar).setOnClickListener {
+            Toast.makeText(applicationContext, "Text", Toast.LENGTH_SHORT)
+        }
+    }
+    fun sacarProgressIndicator(){
+
+        var pI = LinearProgressIndicator(this)
+        pI.show()
 
     }
 }
