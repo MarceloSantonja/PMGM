@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="BotonNormal"
+    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+    android:id="@+id/boton0"/>
+<com.google.android.material.button.MaterialButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="BotonMaterial"
+    android:id="@+id/boton"
+    style="@style/Widget.MaterialComponents.Button"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BotonUnelevate"
+        android:id="@+id/botonUnElevate"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BotonOutline"
+        android:id="@+id/botonUnOutline"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BotonText"
+        android:onClick="miPulsacion"
+        android:id="@+id/botonUnText"
+        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@android:drawable/ic_menu_search"
+        android:id="@+id/botonIcon"
+        android:text="Buscar"
+        app:iconGravity="end"
+        style="@style/Widget.MaterialComponents.Button.Icon"/>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:checkedButton="@+id/btniOS"
+        android:id="@+id/toggleGroup"
+        app:singleSelection="true">
+        <Button
+            android:id="@+id/btnAndroid"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android" />
+        <Button
+            android:id="@+id/btniOS"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iOS" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:indeterminate="true"
+        android:id="@+id/progreso">
+
+    </com.google.android.material.progressindicator.LinearProgressIndicator>
+
+
+</LinearLayout>
