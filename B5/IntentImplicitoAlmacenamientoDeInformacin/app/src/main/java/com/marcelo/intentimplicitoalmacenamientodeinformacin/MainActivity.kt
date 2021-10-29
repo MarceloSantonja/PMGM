@@ -22,6 +22,7 @@ import com.google.android.material.snackbar.Snackbar
 import com.marcelo.intentimplicitoalmacenamientodeinformacin.databinding.ActivityMainBinding
 
 
+@RequiresApi(Build.VERSION_CODES.Q)
 class MainActivity : AppCompatActivity() {
 
 
@@ -75,8 +76,8 @@ class MainActivity : AppCompatActivity() {
 
 
     val RESPUESTA_PERMISOLLAMADA = 111
+// hacer un solicitar permiso  para la llamada y otro para
 
-    @RequiresApi(Build.VERSION_CODES.Q)
     fun solicitarPermisoLlamada() {
         if (checkSelfPermission(ACTION_CALL) == PackageManager.PERMISSION_DENIED) {
             if (shouldShowRequestPermissionRationale(ACTION_CALL))
@@ -86,7 +87,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
+// hacer permisoLLamada
     override fun onRequestPermissionsResult(
         requestCode: Int,//código de identificación del resultado
         permissions: Array<out String>,//array con los nombres de los permisos
