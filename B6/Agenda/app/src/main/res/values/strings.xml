@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Agenda</string>
+    <string name="familia">Familia</string>
+    <string name="amigos">Amigos</string>
+    <string name="trabajo">Trabajo</string>
+    <string name="nombre">Nombre</string>
+</resources>
