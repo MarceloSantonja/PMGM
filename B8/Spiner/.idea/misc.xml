@@ -3,11 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/PMGM/B7/ReciclerViewEjemplo/app/src/main/res/layout/activity_main.xml" value="0.28442028985507245" />
+        <entry key="..\:/Users/xusa/AndroidStudioProjects/B2Proyectos/Spiner/app/src/main/res/layout/activity_main.xml" value="0.11548913043478261" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
