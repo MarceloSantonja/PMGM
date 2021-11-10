@@ -8,31 +8,30 @@ import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() , PasaDatos{
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-         var pulsado=false
         setContentView(R.layout.activity_main)
         var fragmentTransation=supportFragmentManager.beginTransaction()
         fragmentTransation.add(R.id.contenedor,Fragment1())
         fragmentTransation.commit()
-       // fragmentTransation.addToBackStack("fragment1")
+    }
 
+    fun abreFragement(cadena:String)
+    {
+        var fragmentTransation=supportFragmentManager.beginTransaction()
 
-        val nameObserver = Observer<String>{datoCadena ->
-            var fragmentTransation=supportFragmentManager.beginTransaction()
-
-            var fragment2=Fragment2()
-            var bundle=Bundle()
-
-            fragment2.arguments=bundle
-            fragmentTransation.add(R.id.contenedor,fragment2)
-            fragmentTransation.addToBackStack("fragment2")
-            fragmentTransation.commit()
-        }
-
-
+        var fragment2=Fragment2()
+        var bundle=Bundle()
+        bundle.putString("DATO",cadena)
+        fragment2.arguments=bundle
+        fragmentTransation.replace(R.id.contenedor,fragment2)
+        fragmentTransation.addToBackStack("fragment2")
+        fragmentTransation.commit()
+    }
+    override fun datosCadena(cadena: String) {
+        abreFragement(cadena)
     }
 }

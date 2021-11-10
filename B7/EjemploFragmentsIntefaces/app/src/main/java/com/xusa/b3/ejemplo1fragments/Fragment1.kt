@@ -1,5 +1,6 @@
 package com.xusa.b3.ejemplo1fragments
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -15,24 +16,26 @@ import androidx.fragment.app.activityViewModels
 
 class Fragment1:ListFragment(){
 
-
+    lateinit var interfacePasarDatos:PasaDatos
     lateinit var valores:Array<String>
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        interfacePasarDatos=context as PasaDatos
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         valores =
             arrayOf("item1", "item2", "item3", "item4",
                 "item5", "item6", "item7", "item8")
-
         val adaptador= ArrayAdapter(requireActivity(),android.R.layout.simple_list_item_1, valores)
         listAdapter=adaptador
-
     }
 
     override fun onListItemClick(l: ListView, v: View, position: Int, id: Long) {
         super.onListItemClick(l, v, position, id)
-
-
+        interfacePasarDatos.datosCadena(valores.get(position))
     }
 
 }
