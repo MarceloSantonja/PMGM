@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="@dimen/dialog_body">
+<TextView
+android:id="@+id/info_text"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:gravity="center"
+android:paddingTop="@dimen/padding_between"
+android:paddingBottom="@dimen/padding_between"
+android:text="@string/info_text"
+android:textAppearance="?android:attr/textAppearanceSmall"
+app:layout_constraintLeft_toLeftOf="parent"
+app:layout_constraintRight_toRightOf="parent"
+app:layout_constraintTop_toTopOf="parent" />
+<com.google.android.material.button.MaterialButton
+android:id="@+id/crear_boton"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:paddingTop="@dimen/button_padding"
+android:paddingBottom="@dimen/button_padding"
+android:text="@string/crear_boton"
+android:textColor="@android:color/white"
+app:layout_constraintLeft_toLeftOf="parent"
+app:layout_constraintRight_toRightOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/info_text" />
+<View
+android:id="@+id/divider"
+android:layout_width="match_parent"
+android:layout_height="1dp"
+android:layout_marginTop="@dimen/padding_between"
+android:layout_marginBottom="@dimen/padding_between"
+android:background="#C8C9CB"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/crear_boton" />
+<com.google.android.material.textfield.TextInputLayout
+android:id="@+id/text_input_layout_usuario"
+style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="@dimen/padding_between"
+android:hint="Usuario"
+app:boxCornerRadiusTopEnd="10dp"
+app:boxCornerRadiusTopStart="10dp"
+app:startIconDrawable="@drawable/account"
+app:layout_constraintLeft_toLeftOf="parent"
+app:layout_constraintRight_toRightOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/divider">
+<com.google.android.material.textfield.TextInputEditText
+    android:id="@+id/nombre_input"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPersonName"
+    android:padding="@dimen/edit_text_padding"
+    android:singleLine="true"/>
+</com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout
+android:id="@+id/text_input_layout_contra"
+style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="@dimen/normal_padding"
+android:layout_marginBottom="@dimen/padding_between"
+android:hint="Contraseña"
+app:boxCornerRadiusTopEnd="10dp"
+app:boxCornerRadiusTopStart="10dp"
+app:startIconDrawable="@drawable/outline_vpn_key_24"
+app:layout_constraintLeft_toLeftOf="parent"
+app:layout_constraintRight_toRightOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/text_input_layout_usuario">
+<com.google.android.material.textfield.TextInputEditText
+    android:id="@+id/contra_input"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPersonName"
+    android:padding="@dimen/edit_text_padding"
+    android:singleLine="true"/>
+</com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.checkbox.MaterialCheckBox
+android:id="@+id/recordar_check"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="@dimen/padding_between"
+android:checked="false"
+android:text="@string/recordar_check"
+app:layout_constraintLeft_toLeftOf="@+id/text_input_layout_contra"
+app:layout_constraintStart_toStartOf="@+id/text_input_layout_contra"
+app:layout_constraintTop_toBottomOf="@+id/text_input_layout_contra" />
+<TextView
+android:id="@+id/olvidar_text"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:paddingTop="@dimen/padding_between"
+android:text="@string/olvidar_text"
+android:textAppearance="?android:attr/textAppearanceSmall"
+app:layout_constraintEnd_toEndOf="@+id/text_input_layout_contra"
+app:layout_constraintRight_toRightOf="@+id/text_input_layout_contra"
+app:layout_constraintTop_toBottomOf="@+id/recordar_check" />
+<com.google.android.material.button.MaterialButton
+android:id="@+id/entrar_boton"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:paddingTop="@dimen/button_padding"
+android:paddingBottom="@dimen/button_padding"
+android:text="@string/entrar_boton"
+android:textColor="@android:color/white"
+app:layout_constraintLeft_toLeftOf="parent"
+app:layout_constraintRight_toRightOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/olvidar_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
