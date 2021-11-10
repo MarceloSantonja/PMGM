@@ -1,0 +1,2 @@
+com/xusa/b3/ejemplo1fragments/BuildConfig.java
+ com.xusa.b3.ejemplo1fragments.BuildConfig
