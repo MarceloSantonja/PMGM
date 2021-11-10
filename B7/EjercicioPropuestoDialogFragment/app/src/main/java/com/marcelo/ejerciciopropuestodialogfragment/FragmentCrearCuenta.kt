@@ -1,13 +1,13 @@
 package com.marcelo.ejerciciopropuestodialogfragment
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class FragmentEntrar : Fragment() {
+
+class FragmentCrearCuenta : Fragment() {
 
 
     override fun onCreateView(
@@ -15,9 +15,6 @@ class FragmentEntrar : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_entrar_fragment, container, false)
+        return inflater.inflate(R.layout.fragment_crear_cuenta, container, false)
     }
-
-
-
 }

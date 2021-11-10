@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/PMGM/B7/EjercicioPropuestoDialogFragment/app/src/main/res/layout/activity_fragment_crear_cuenta.xml" value="0.2" />
         <entry key="..\:/PMGM/B7/EjercicioPropuestoDialogFragment/app/src/main/res/layout/activity_main.xml" value="0.2074074074074074" />
+        <entry key="..\:/PMGM/B7/EjercicioPropuestoDialogFragment/app/src/main/res/layout/fragment_crear_cuenta.xml" value="0.2" />
+        <entry key="..\:/PMGM/B7/EjercicioPropuestoDialogFragment/app/src/main/res/layout/fragment_dialog.xml" value="0.2" />
         <entry key="..\:/PMGM/B7/EjercicioPropuestoDialogFragment/app/src/main/res/layout/fragment_entrar_fragment.xml" value="0.2074074074074074" />
       </map>
     </option>

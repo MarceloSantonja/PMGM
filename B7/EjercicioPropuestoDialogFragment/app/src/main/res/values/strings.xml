@@ -7,5 +7,7 @@
     <string name="recordar_check">Recordarme</string>
     <string name="olvidar_text">¿Olvidaste tu Contraseña?</string>
     <string name="entrar_boton">ENTRAR</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
