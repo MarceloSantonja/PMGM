@@ -24,7 +24,7 @@ class DialogFragment : Fragment() {
 
 
         botonEntrar.setOnClickListener {
-            val FT= getSupportFragmentManager().beginTransaction()
+            val FT= requireActivity().beginTransaction()
             FT.replace(R.id.fragment_container,FragmentEntrar())
             FT.addToBackStack(null)
             FT.commit()
