@@ -16,14 +16,16 @@ class MainActivity : AppCompatActivity() {
         var recyclerView=findViewById<RecyclerView>(R.id.recycler)
         var adaptador=Adaptador(datos,this)
         recyclerView.adapter=adaptador
-       /* recyclerView.layoutManager =
-            LinearLayoutManager(this, LinearLayoutManager.VERTICAL, true)*/
+        recyclerView.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.VERTICAL, true)
         adaptador.PulsarItemListener(View.OnClickListener {
             val posicion=recyclerView.getChildAdapterPosition(it)
             Toast.makeText(this,datos.get(posicion).nombre,Toast.LENGTH_LONG).show()
         })
-        recyclerView.layoutManager =
-           GridLayoutManager(this,4)
+       /* recyclerView.layoutManager =
+           GridLayoutManager(this,4)*/
+    /*    recyclerView.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)*/
 
     }
     private fun anadirDatos():ArrayList<Usuario>
@@ -33,5 +35,7 @@ class MainActivity : AppCompatActivity() {
             datos.add(Usuario("nombre$i", "apellido1$i Apellido2$i"))
         return datos
     }
+
+
 
 }

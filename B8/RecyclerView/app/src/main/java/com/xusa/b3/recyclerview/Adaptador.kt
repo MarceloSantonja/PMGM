@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class Adaptador( datos:ArrayList<Usuario>, var contexto: Context): RecyclerView.Adapter<HolderUsuario>(),View.OnClickListener {
@@ -16,6 +17,9 @@ class Adaptador( datos:ArrayList<Usuario>, var contexto: Context): RecyclerView.
        var view= LayoutInflater.from(parent.context)
            .inflate(R.layout.linea_recycler, parent, false)
         var holderUsuario=HolderUsuario(view,0,contexto)
+         holderUsuario.apellidoOnClickListener(View.OnClickListener {
+             Toast.makeText(contexto,"ASDFADSF",Toast.LENGTH_SHORT).show()
+         })
         view.setOnClickListener(this)
         return holderUsuario
     }
