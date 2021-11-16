@@ -1,0 +1,2 @@
+rootProject.name = "ERPajaros"
+include ':app'

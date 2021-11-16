@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentLista">
+
+    <fragment
+        android:id="@+id/fragmentLista"
+        android:name="com.ejemplos.b8.erpajaros.FragmentLista"
+        android:label="FragmentLista" >
+        <action
+            android:id="@+id/action_fragmentLista_to_fragmentDetalle"
+            app:destination="@id/fragmentDetalle" />
+        <action
+            android:id="@+id/action_fragmentLista_to_dialogEliminar"
+            app:destination="@id/dialogEliminar" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetalle"
+        android:name="com.ejemplos.b8.erpajaros.FragmentDetalle"
+        android:label="FragmentDetalle" />
+    <dialog
+        android:id="@+id/dialogEliminar"
+        android:name="com.ejemplos.b8.erpajaros.DialogEliminar">
+        <argument android:name="myarg" android:defaultValue="@null" />
+    </dialog>
+</navigation>

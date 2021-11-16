@@ -22,6 +22,14 @@ class MainActivity : AppCompatActivity() {
             val posicion=recyclerView.getChildAdapterPosition(it)
             Toast.makeText(this,datos.get(posicion).nombre,Toast.LENGTH_LONG).show()
         })
+
+        adaptador.onLongClickUsuari(object:PasarUsuario{
+            override fun pasarUsuario(usuario: Usuario) {
+                Toast.makeText(this@MainActivity, usuario.nombre+usuario.apellidos, Toast.LENGTH_SHORT).show()
+
+            }
+
+        })
        /* recyclerView.layoutManager =
            GridLayoutManager(this,4)*/
     /*    recyclerView.layoutManager =
