@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegador"
+    app:startDestination="@id/dialogFragment">
+
+    <fragment
+        android:id="@+id/dialogFragment"
+        android:name="com.marcelo.ejerciciopropuestodialogfragment.DialogFragment"
+        android:label="fragment_dialog"
+        tools:layout="@layout/fragment_dialog" >
+        <action
+            android:id="@+id/action_dialogFragment_to_fragmentEntrar"
+            app:destination="@id/fragmentEntrar" />
+        <action
+            android:id="@+id/action_dialogFragment_to_fragmentCrearCuenta"
+            app:destination="@id/fragmentCrearCuenta" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentEntrar"
+        android:name="com.marcelo.ejerciciopropuestodialogfragment.FragmentEntrar"
+        android:label="fragment_entrar_fragment"
+        tools:layout="@layout/fragment_entrar_fragment" />
+    <fragment
+        android:id="@+id/fragmentCrearCuenta"
+        android:name="com.marcelo.ejerciciopropuestodialogfragment.FragmentCrearCuenta"
+        android:label="fragment_crear_cuenta"
+        tools:layout="@layout/fragment_crear_cuenta" />
+</navigation>

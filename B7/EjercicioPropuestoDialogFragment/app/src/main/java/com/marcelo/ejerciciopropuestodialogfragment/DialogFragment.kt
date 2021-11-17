@@ -9,7 +9,7 @@ import android.widget.Button
 import android.widget.TextView
 
 
-class DialogFragment : Fragment() {
+class DialogFragment : DialogFragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -24,10 +24,7 @@ class DialogFragment : Fragment() {
 
 
         botonEntrar.setOnClickListener {
-            val FT= requireActivity().beginTransaction()
-            FT.replace(R.id.fragment_container,FragmentEntrar())
-            FT.addToBackStack(null)
-            FT.commit()
+
         }
 
 
