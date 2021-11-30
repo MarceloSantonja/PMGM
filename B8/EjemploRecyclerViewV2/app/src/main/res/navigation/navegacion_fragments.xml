@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navegacion_fragments"
+    app:startDestination="@id/fragmentRecycler">
+
+    <fragment
+        android:id="@+id/fragmentRecycler"
+        android:name="com.ejemplos.b8.ejemplorecyclerviewV2.FragmentRecycler"
+        android:label="FragmentRecycler" />
+</navigation>
