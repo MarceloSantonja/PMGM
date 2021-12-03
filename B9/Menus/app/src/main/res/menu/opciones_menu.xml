@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/option_1"
+        android:icon="@android:drawable/star_on"
+        app:showAsAction="ifRoom"
+        android:title="@string/option_1" />
+    <item android:id="@+id/submenu"
+        android:title="SubMEnu">
+    <menu>
+        <item android:id="@+id/option_2"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/option_2" />
+    </menu>
+
+    </item>
+
+    <group android:id="@+id/group1_1">
+        <item android:id="@+id/group_op1"
+            android:title="@string/group_op1" />
+        <item android:id="@+id/group_op2"
+            android:title="@string/group_op2" />
+    </group>
+</menu>

@@ -1,4 +1,4 @@
-package com.marcelo.menus
+package com.xusa.b9.myapplication
 
 import org.junit.Test
 
