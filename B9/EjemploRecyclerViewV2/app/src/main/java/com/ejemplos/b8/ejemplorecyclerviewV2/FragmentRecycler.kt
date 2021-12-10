@@ -83,10 +83,9 @@ class FragmentRecycler: Fragment() {
         }
 
         override fun onActionItemClicked(mode: ActionMode?, item: MenuItem?): Boolean {
-                   for(item in tracker.selection.sorted().reversed()) {
+                   for(item in tracker.selection.sorted().reversed())
                        model.getListaDatos()?.removeAt(item.toInt())
-                       adaptador.notifyItemChanged(item.toInt())
-                   }
+            adaptador.notifyDataSetChanged()
             tracker?.clearSelection()
             actionMode = null
             return true
