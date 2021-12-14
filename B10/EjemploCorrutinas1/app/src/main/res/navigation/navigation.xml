@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentUno">
+
+    <fragment
+        android:id="@+id/fragmentUno"
+        android:name="com.ejemplos.b10.ejemplocorrutinas1.FragmentUno"
+        android:label="FragmentUno" >
+        <action
+            android:id="@+id/action_fragmentUno_to_fragmentDos"
+            app:destination="@id/fragmentDos" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDos"
+        android:name="com.ejemplos.b10.ejemplocorrutinas1.FragmentDos"
+        android:label="FragmentDos" />
+</navigation>
