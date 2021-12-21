@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#CCE1E100">
+
+    <TextView
+        android:gravity="center"
+        android:textSize="50dp"
+        android:id="@+id/texto"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Información fragment2"/>
+
+</LinearLayout>
