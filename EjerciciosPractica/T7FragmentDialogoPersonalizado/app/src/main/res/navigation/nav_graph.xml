@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/fragmentEntrandoSistema"
+        android:name="com.marcelo.T7FragmentDialogoPersonalizado.fragmentEntrandoSistema"
+        android:label="fragment_entrado_sistema"
+        tools:layout="@layout/fragment_entrado_sistema" />
+    <fragment
+        android:id="@+id/fragmentPersona"
+        android:name="com.marcelo.T7FragmentDialogoPersonalizado.FragmentPersona"
+        android:label="fragment_persona"
+        tools:layout="@layout/fragment_persona" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.marcelo.T7FragmentDialogoPersonalizado.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentPersona"
+            app:destination="@id/fragmentPersona" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentEntrandoSistema"
+            app:destination="@id/fragmentEntrandoSistema" />
+    </fragment>
+</navigation>

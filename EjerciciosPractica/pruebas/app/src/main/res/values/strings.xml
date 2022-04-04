@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">pruebas</string>
     <string name="hello_world">helloworld</string>
+    <string name="Codigo"><![CDATA[<string name="hello_world" >helloworld</string>]]></string>
+    <string name="hell_world">hellworld</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_label_flat">button albel flat</string>
 </resources>
