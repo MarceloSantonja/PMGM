@@ -36,14 +36,32 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/texto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/hello_world"
-            android:textSize="22dp"
-            android:textStyle="bold" />
+            <EditText
+                android:id="@+id/EditTextHello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/hello_world"
+                android:textSize="22dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/material_button_flat"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_label_flat"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+
+
+
+
     </androidx.core.widget.NestedScrollView>
 
   </androidx.coordinatorlayout.widget.CoordinatorLayout>
