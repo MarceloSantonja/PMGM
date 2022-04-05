@@ -1,19 +1,19 @@
 package com.marcelo.T7FragmentDialogoPersonalizado
 
+import T7FragmentDialogoPersonalizado.R
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import T7FragmentDialogoPersonalizado.R
+import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
-import androidx.navigation.NavDirections
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.button.MaterialButton
 
 
-class MainFragment : Fragment() {
+class MainFragment : DialogFragment() {
 
 
     private lateinit var navController: NavController
@@ -23,8 +23,10 @@ class MainFragment : Fragment() {
     ): View? {
 
         val view = inflater.inflate(R.layout.fragment_main, container, false)
-        navController = findNavController()
+       // navController = findNavController()
         val botonEntrar = view.findViewById<MaterialButton>(R.id.entrar_boton)
+
+
         botonEntrar.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_mainFragment_to_fragmentEntrandoSistema)
         )
