@@ -13,8 +13,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val framentManager=supportFragmentManager
         val fragmentTransaction=framentManager.beginTransaction()
-        val dialogFragmento= DialogFragment()
-        fragmentTransaction.add(R.id.fragment_container,dialogFragmento)
+        val dialogFragmento= DialogoFragment()
+        fragmentTransaction.add(R.id.fragment_container,DialogoFragmento)
         fragmentTransaction.commit()
 
         val botonCrear =findViewById<Button>(R.id.crear_boton)

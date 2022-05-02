@@ -8,9 +8,11 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.fragment.app.DialogFragment
 
 
-class DialogFragment : DialogFragment() {
+class DialogoFragment : DialogFragment() {
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
