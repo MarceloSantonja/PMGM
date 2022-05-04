@@ -1,7 +1,10 @@
 package com.marcelo.b2.ejemplo1
 
+import android.content.pm.PackageManager
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.annotation.RequiresApi
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,4 +13,5 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
 }
