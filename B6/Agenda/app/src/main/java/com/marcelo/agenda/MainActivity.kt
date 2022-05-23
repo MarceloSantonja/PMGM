@@ -88,7 +88,6 @@ class MainActivity : AppCompatActivity() {
             registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
                 if (result.resultCode == Activity.RESULT_OK) {
                     binding.contactoImage.setImageBitmap(result.data?.extras?.get("data") as Bitmap)
-
                 }
             }
         resultadoGaleria =

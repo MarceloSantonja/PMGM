@@ -224,5 +224,7 @@ tools:context=".MainActivity">
     app:fabSize="normal"
     android:layout_margin="20dp"
     app:layout_anchor="@id/vistaArriba"
-    app:layout_anchorGravity="bottom|end"/>
+    app:layout_anchorGravity="top|end"/>
+
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

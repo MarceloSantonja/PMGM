@@ -29,9 +29,6 @@ galería.
         val view = binding.root
         setContentView(view)
 
-
-
-
     }
 
 
